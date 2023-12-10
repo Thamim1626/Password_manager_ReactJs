@@ -1,0 +1,268 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #c3caea;
+  padding: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-logo {
+  width: 250px;
+}
+
+.top-card {
+  width: 95%;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: #454f84;
+  padding: 14px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+.form-card {
+  background-color: #5763a5;
+  margin: 12px;
+  padding: 14px;
+  border-radius: 8px;
+}
+.submit-button {
+  width: 80px;
+  height: 30px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #0b69ff;
+  margin-top: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.form-heading {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  height: 36px;
+  width: 350px;
+  margin-top: 16px;
+  border-radius: 3px;
+}
+.input-icon {
+  height: 26px;
+  padding: 2px;
+  margin-right: 8px;
+  border-right: 1px solid black;
+}
+
+.input {
+  height: 30px;
+  width: 280px;
+  outline: none;
+  border: none;
+}
+.top-img-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+}
+.top-img {
+  width: 350px;
+  height: 350px;
+}
+
+@media (min-width: 768px) {
+  .top-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #9ba9eb;
+    padding: 14px;
+    border-radius: 4px;
+    margin-top: 16px;
+  }
+  .form-card {
+    width: 54%;
+    padding: 20px;
+    margin-top: 26px;
+  }
+  .top-img-section {
+    width: 47%;
+  }
+  .input-section {
+    margin-top: 24px;
+    width: 300px;
+  }
+}
+
+.bottom-card {
+  width: 95%;
+  background-color: #5763a5;
+  margin-top: 16px;
+  padding: 20px;
+  border-radius: 4px;
+  min-width: 450px;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.bottom-header-left {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.bottom-header-left-des {
+  font-weight: bold;
+}
+.bottom-header-left-count {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.bottom-header-right {
+  display: flex;
+  align-items: center;
+  width: 180px;
+}
+.bottom-header-right {
+  background-color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+.search-icon {
+  width: 20px;
+  margin-right: 4px;
+}
+.search-input {
+  outline: none;
+  border: none;
+  width: 120px;
+}
+
+/* bottom body style started*/
+.bottom-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.check-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: end;
+}
+
+.check-label {
+  font-size: 18px;
+  color: #fff;
+}
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  margin-right: 6px;
+}
+
+/* list started*/
+
+.password-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.password-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f8fafc;
+  padding: 12px;
+  margin: 8px;
+  min-width: 360px;
+  max-width: 450px;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.password-profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  text-align: center;
+  margin-right: 16px;
+  font-weight: 700;
+}
+
+.password-detail {
+  color: white;
+  font-family: Roboto;
+  margin-right: 14px;
+  width: 50%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.del-button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.del-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.result {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-fount-image {
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.hashed-image {
+  width: 120px;
+}

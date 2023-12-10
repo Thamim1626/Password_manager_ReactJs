@@ -1,5 +1,10 @@
 import './App.css'
+import PsMangaer from './Components/PsManager'
 
-const App = () => <div>Hello World</div>
+const App = () => (
+  <div>
+    <PsMangaer />
+  </div>
+)
 
 export default App
