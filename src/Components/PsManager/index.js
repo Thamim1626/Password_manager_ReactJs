@@ -3,16 +3,14 @@ import {v4 as uuidV4} from 'uuid'
 import PasswordList from '../PasswordList'
 import './index.css'
 
-const initialList = JSON.parse(localStorage.getItem('localPassList'))
-
 class PsMangaer extends Component {
   state = {
     urlInput: '',
     usernameInput: '',
     passwordInput: '',
-    passwordList: initialList,
+    passwordList: [],
     searchInput: '',
-    visibleCheck: false,
+    visibleCheck: true,
   }
 
   onChangeCheck = () => {
@@ -91,7 +89,6 @@ class PsMangaer extends Component {
       searchInput,
       visibleCheck,
     } = this.state
-    localStorage.setItem('localPassList', JSON.stringify(passwordList))
     const filterPasswordList = passwordList.filter(eachItem => {
       const lowerInput = searchInput.toLowerCase()
       const lowerUrl = eachItem.urls.toLowerCase()
@@ -102,9 +99,10 @@ class PsMangaer extends Component {
       <div className="result">
         <img
           src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
-          alt="password"
+          alt="no passwords"
           className="not-fount-image"
         />
+        <p>No Passwords</p>
       </div>
     )
     const found = (
@@ -196,7 +194,7 @@ class PsMangaer extends Component {
         <div className="bottom-card">
           <div className="bottom-header">
             <div className="bottom-header-left">
-              <p className="bottom-header-left-des">Your Password</p>
+              <h1 className="bottom-header-left-des">Your Passwords</h1>
               <p type="button" className="bottom-header-left-count">
                 {filterPasswordList.length}
               </p>
@@ -225,7 +223,7 @@ class PsMangaer extends Component {
                 onChange={this.onChangeCheck}
               />
               <label htmlFor="checkbox1" className="check-label">
-                show password
+                Show passwords
               </label>
             </div>
 

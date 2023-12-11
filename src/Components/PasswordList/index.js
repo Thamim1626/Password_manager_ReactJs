@@ -7,7 +7,7 @@ const PasswordList = props => {
   const hashedImage = (
     <img
       src="https://assets.ccbp.in/frontend/react-js/password-manager-stars-img.png"
-      alt="star"
+      alt="stars"
       className="hashed-image"
     />
   )
@@ -21,7 +21,12 @@ const PasswordList = props => {
         <p className="password-name">{username}</p>
         {isVisibleCheck ? hashedImage : hashedPassword}
       </div>
-      <button type="button" className="del-button" onClick={deleteFunction}>
+      <button
+        type="button"
+        data-testid="delete"
+        className="del-button"
+        onClick={deleteFunction}
+      >
         <img
           src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
           alt="delete"
