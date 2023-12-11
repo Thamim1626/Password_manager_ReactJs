@@ -162,7 +162,7 @@ class PsMangaer extends Component {
                 value={usernameInput}
                 type="text"
                 className="input"
-                placeholder="Enter Name"
+                placeholder="Enter Username"
                 onChange={this.onChangeName}
               />
             </div>
@@ -177,7 +177,7 @@ class PsMangaer extends Component {
                 value={passwordInput}
                 type="password"
                 className="input"
-                placeholder="Enter password"
+                placeholder="Enter Password"
                 onChange={this.onChangePassword}
               />
             </div>
